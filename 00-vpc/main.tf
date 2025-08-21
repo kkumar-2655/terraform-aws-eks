@@ -2,9 +2,9 @@ module "vpc" {
     source = "git::https://github.com/kkumar-2655/terraform-vpc-module.git?ref=main"
     project = var.project
     environment = var.environment
-    public_subnet_cidrs = var.public_subnet_cidrs
-    private_subnet_cidrs = var.private_subnet_cidrs
-    database_subnet_cidrs = var.database_subnet_cidrs
+    public_subnets_cidr = var.public_subnets_cidr
+    private_subnets_cidr = var.private_subnets_cidr
+    database_subnets_cidr = var.database_subnets_cidr
 
     is_peering_required = true
 
